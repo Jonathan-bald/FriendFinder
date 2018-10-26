@@ -1,1 +1,300 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FriendFinder</title>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome Glyphicons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <!-- Chosen -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+</head>
+
+<style>
+    img {
+       height: 50%;
+       width: 50%;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+
+        <h2>Survey Questions</h2>
+        <hr>
+
+        <h3>
+            <strong>About You</strong>
+        </h3>
+        <h4>Name (Required)</h4>
+        <input type="text" id="name" class="form-control" required>
+
+        <h4>Link to Photo Image (Required)</h4>
+        <input type="text" id="photo" class="form-control" required>
+
+        <hr>
+
+        <h3>
+            <strong>Question 1</strong>
+        </h3>
+        <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+        <select class="chosen-select" id="q1">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3>
+            <strong>Question 2</strong>
+        </h3>
+        <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+        <select class="chosen-select" id="q2">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3>
+            <strong>Question 3</strong>
+        </h3>
+        <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+        <select class="chosen-select" id="q3">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3>
+            <strong>Question 4</strong>
+        </h3>
+        <h4>You rarely do something just out of sheer curiosity.</h4>
+        <select class="chosen-select" id="q4">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3>
+            <strong>Question 5</strong>
+        </h3>
+        <h4>People can rarely upset you.</h4>
+        <select class="chosen-select" id="q5">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3>
+            <strong>Question 6</strong>
+        </h3>
+        <h4>It is often difficult for you to relate to other people’s feelings.</h4>
+        <select class="chosen-select" id="q6">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3>
+            <strong>Question 7</strong>
+        </h3>
+        <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+        <select class="chosen-select" id="q7">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3>
+            <strong>Question 8</strong>
+        </h3>
+        <h4>You rarely get carried away by fantasies and ideas.</h4>
+        <select class="chosen-select" id="q8">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3>
+            <strong>Question 9</strong>
+        </h3>
+        <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+        <select class="chosen-select" id="q9">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3>
+            <strong>Question 10</strong>
+        </h3>
+        <h4>You feel more energetic after spending time with a group of people.</h4>
+        <select class="chosen-select" id="q10">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <br>
+        <br>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+            Submit</button>
+
+        <hr>
+        <footer class="footer">
+            <div class="container">
+                <p>
+                    <a href="api/friends">API Friends List</a> |
+                    <a href="https://github.com/baldyj117/FriendFinder" target="_blank">GitHub Repo</a>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Modal -->
+    <div id="results-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title">
+                        <strong>Best Match</strong>
+                    </h2>
+                </div>
+                <div class="modal-body">
+                    <h2 id="match-name"></h2>
+                    <img id="match-img" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhISEhAWFhUVEhUXFhUSEhUWDxgSFRUXFhUWFRcYHiggGBolGxUWITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGxAQGy0mHyYtLTAtLS0vLS0tLS0vLS0tLS0wLS0tLS0tLS0tLS0tLy0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBEQACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAAAwUEBwECBgj/xABAEAACAQICBwQGBgoDAQEAAAAAAQIDEQQhBQYSMUFRYQdxgaETIjKRscFSYnJz0eEUJDM0QpKissLwI4LxQxX/xAAbAQEAAgMBAQAAAAAAAAAAAAAAAwQBAgUGB//EADcRAAIBAgQDBgUCBQUBAAAAAAABAgMRBBIhMQVBURMiYXGR0TKBobHwQsEUFSMz4QYkUmLxQ//aAAwDAQACEQMRAD8A3iAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeQ1g7RcFhZum5SqzXtKioyUXycm0r9FcinWhF2OnhuEYmvHOkkvHS/wBGzzGK7Z6aqQVPCS9HtLbc5JVNnnGMbq635sj/AIlX0RZ/kklHvTV+Vlp+fIvKXavo1ycdqql9N0nseT2vI3/iIFdcHxLWlvK/voei0TrPg8RZUcTTlJ7o32an8srPyN41Iy2ZVr4HEUFepBpdeXqtC4NyqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdK1WMIylJpRim227JRSu23yBlJt2RpjXbtJqV9qjhXKnRzTnuq1F8YR6b+fIpVq/KJ6/hvBIUkqlfWXJcl7v6GuJsqHam2zhRyFzXImtThQM3MKmiejJqzTtZ3vxuatk0NDbHZ/wBoTbhhsZK97RhWk8+kaj/y9/MuUMTd5Z+p53i/A0k6+GWnOP7r29OhtRF08oAAAAAAAAAAAAAAAAAAAAAAAAAAAYmkdJUaENutVjTjznJK75Lm+iMOSSuySlRqVZZacW34GuNP9r0ITUcJR24p+tOreKa5Qis/F+5laeJS+FXO7h+At/35W8Fr68vkvUudD9qGCq2VVyoSf01tU7/bj80jeGIhJdCviOB4mldx7y8N/QoO1PXKFSEcJhqqnGSUqtSnJOLW+NNNe9+C5keIrWWVHQ4FwyWd16qtbZPr19jVVRlC9z08zoZIg2A3odoxb3L3A2RIqUuXmg0zeMZdCSMWuH4GrTJ4aG2ezPXbaUcHiZ+srKjUk/aXCnJ8+T47u+/hq+ZZZbnkeO8H7NvEUV3f1Lp4rw69PLbZpcPLAAAAAAAAAAAAAAAAAAAAAAA4bANea49pdOjenhEqtTNOb/YxfT6b8u8rVcQo6R3PQ4DgNSqlUr92PTm/Y1FpfTFfET269WVSXByeS6RW6K6IpOcpO7PTUqNLDxy0opL83e7KqZkhndu5LTbeXv7jCjzJoSc7QRkPkRyldl21lZEbZgjbsdY02935G9iJRcnZHdQS35/AZuhIqcY/FqcSrMxqHV5I6ekYsR9pI7xqPgNiRVGT0arvm8+fEzuSwlfRm4NTu0ejKnCljJuFRer6Vq9Odtzk17Mud8upfpYhSWp47ifAatObnh1eL5Lde66Gw6VRSSlFppq6ad00+Ka3lk86007M7gwAAAAAAAAAAAAAAAAAAQY3EejpzqWvsQlKy3vZTdl7jDdjaEc0lHqzSGsXaRisQpQilSpSycYXc2uUpP5WOfPESlotEe5wfBcNhmpyvKS67envc8ZOVyu2dlyzEUkYuQySIJokjqVammhl0aWyrcXvZicv0ou0KXZx13OzaT3EehI9HZj01t2XcZ1MdpFcjo8Q+YszV4hnZVU96GqNlUhP4kdZ0L+y/BmVJGk8PfWD+RjN2yZtYqZnF2Z3izVksWSJhEqdmZEpeZi9tSzK2x6DVbXHEYKSUZbdLjSm/Ud+Mfovu8blmlXcNHscjiHCqOLV2rS6r9+pujVjWvDY2N6UrTS9alPKouv1l1XkXoTUloeKxvD62ElaotOTWzL03KQAAAAAAAAAAAAAAAAMLTSh+j1vSez6KblfdZRbbMS2ZLQzdrHLvdW9T5krtN3Xu/A5SSaPpc283gRkbQR0mwjSo9DihH+J+BI3lVuZHQj/APSXyMuksr8yKWmh0aSusx0rI1RpWXMxt7siVIo3c3lW5IoJdX5GL32JckYLXV/QidfO1/wNsrIHiNbHeFRmrRLCo7klRbSzV/j4BabEtRKpHvK5hylsuxJa6Oc59nOz2MtZo0Ogu8jmcvVXRmF0Nqkv6afQbd11RhLkYlPNC/QkwWNnCUZwm4yi7qUW1JPo0SRk4sjeStHLNXT5G1NVu1NerTxsenpoLznBfGPuLtPEJ7nmsb/p5q88O7/9X+z9/U2ZgsZTqwVSlOM4PdKLuiync81UpypycZqzXUnBoAAAAAAAAAAAAADyXanXnDRtfYdtpwjJ/UlNKXv3eJDXv2bOnweEZYyCl4+qTNAM5Z71nSUjYjcrES9Z24LebJWV2QX7SeXlzMqWUb+7uNG9fEuNWhm9CePsruRpLcuw/togxMrI2jEqYmeWJxQhsxu973/gbSdzShTVOF5bvf2IqqlLojKsiCqqlR2WiMWthprNWfc8ySMkyjVw1aDurPyOlKu9zyfXeJQNKWJd8stGZ1KrmRNHUpVtdSSpBSVn4PijMZaklWlGqsr9TEwNXfF8DaatqUcDWveD5GVUi9h2X+3NI/EXaqbouyIMPPeujMyWqK1CpuvBkFKobyiVaNVmZCoao6Ealz0WqetdbBVFKDvBtbdNt7El8pdf/CxTqOJUx2BpYyFpfFyfT/HgfQOidIwxFGnWpu8ZxTXNc0+qeT7i6mmro8FWpSpTdOa1TMsyRgAAAAAAAAAAAHhu2LESjgNlLKpWhGXSKUprzgiviW1DQ7f+n4Rli7vkm19vs2aMsc09tYgrSsbRRVrSsiDDNva5X8yWaSsUsNKc81tixxbyIf1HZrvuWJKErxXcay3J6Es1JGNiZXnGPiTPRNlDESzVow+ZJVlk34I0iierK0bmHKT3mxz3OVsxgVMa095OqSaORUx84S1ZnYStGaTkk0r/AA8iNxcJHRw9aniY3nZow8Ji+F+4knT5lHCY2/dbLalPcVWrM9DTnez6lVt7NV/aa8y043geeVR08V82vqXKeRUW7PT37hiYpWnl/FHz3EsNYo5mKThWdua/wV8ZWdiZo5cJNOzMyjIiaOjRncnRruWuRtTsNlWc8Stt+hjCN4P2fSyl6slyezGV+d1yRbwt9VyPOf6gUVGF13tdedl/6bdLZ5kAAAAAAAAAAAAr9P6Ip4qhUoVPZmt63xks4yXVM1nFSVmT4bETw9VVYbo0brTqNicFTdWo4Sp+kUE4Se07ptScWsllbfv95SnScFdntMJxejip5Ipp2vr9t/2PGVFd25kMUWal5vKuZxWlayXALV3NK1oJRjyMqc9qntf71MW1Lsqna0M6/Op00dXTbhx3r5mtSOlzXh+ITk6XPcgxMrVJvpFLuauyXeKKeIm44mbfRL11OcbXu4x5zl7k8/Iyo6NmMZiHKcafWT9FucTrR2ZSe6OSNYwYnXg4Sm9o6FXUkuT32y58upZSZwqk4vZenX53uWOAwmzeXBqyXz+PvIKlS6sdjAYLsrzezWi/f5ar5sqsThXHZ2eF7vktp2LMJ3TucHE4R03FU+V7voruxa6Mq7UV9WWfdv8AmVascsj0HDK3bUvJlfRltVn9tv3Nk8tKfyORRl2uMa/7P6MvpPJIorZs9bJ/CjG0plsPv+RNR1ic/iiyuLK+vLNPmkSx2OXWleebqZOGNGXMPqjMgiNux0Yq5u/sYwOxgp1eNWs/5YJRXntF3Cq0L9TyHH6mbE5P+KX119jYBZOGAAAAAAAAAAAAACq1o0QsXha2Hdrzh6re5TWcH/Mkazjmi0T4Wu6FaNRcn9Of0PmqWFlTc4zTU1Jxae9OLs0/FHMn3VY+iYeKlHtVz28v8ldijMChinqS6MxCu4Pju7+KFRNd5EnDsQrulLnsY6UqddL6Sez1/wB3EllOldFP+phuIKD53t4/mxlaWV4qa7n/AL3kVHfKy/xVJ0lWj5P88NhsqUbvvT5StZmU7aGrhGrDM/NPo7WfuY8KTirSSa52vFs3k7u8WVadJ0oZKsU16pk1KjHfsq3Tj+Ro5SLFKhS+LLp4cyaUuZpYtyndFfWpSqPZivlFdWyeElHVnGrUamIeSC9l5/lzOoUI04bK72+b/AiqTc2dTDYaGEo5I+bfV/mxX6Nw/wDySnwby8XdktafcUTlcNwv+5nV5Pb57lxFXl3fErPSJ6OCzVPIx9MezH7XyZLR2ZR4xpCPmVTe4mOG3exnYWORHI6mGj3TPoU22kldvJJZu/BJEbR0oWSu9kfSuq2jnh8Jh6LVpQpx2l9d+tP+ps6kI5YpHznGV+3rzqLm3by5fQtTYrAAAAAAAAAAAAAAo9dNMPC4OtWj7SSjDpOb2U33Xv4GlSeWNy7w7CrE4mFJ7PfyWrPneq73bd3xb33ORJ6n0yyUbIqsbElps4uNgVlWds+RairnCrTyq/QtcNWVemlLKas01vUlxRXknRndbHcw9WHEsOlN2qLVPo+q9jNXrwalvatJLnzRo9GpROjFLEUpQqbvSXn1XhzKrD13BuD4OxLON+8jiYbESoydKXIzI1Vwy7txDY6MasXtocTk+/u/AykYnUa8fIRg3nLJf1PuRnRGIwlNXnovqSbdlZKy5fjzNG2ydSUVaKsiOvP1JSe5eb5G0I6kOIqLsZTey+p0wT9W748PgjNTWViLBNxpZ3uzPoxI5nXoRsjE02/Vj9r5MmoLc5nGnaEfP9mVMM2TM4MNWWdPJELep3KekTcXZZqTBwo46s25NuVOm16qs7RnLm8m14Ms0aK0mzg8V4rNqWGp7c3zfh7m1C0ecAAAAAAAAAAAAAAAPLdpuDdTR1e2+CjU8ISTl/TcirK8GdLg9Xs8ZTb629dDQczmOJ9HkYWLjdGYaM5+LheJRYxZNF2nueTxqeVokwcJxs7Ndf8AwxUakSYOFajZtNeJZ08Rne9nzK2W2x3aeIzPNezO1elCo7v1Zc1ufejMZtaMzXoUsQ8z7suvJ+a9jijgp/Sjbo8/czLcWYo4Ote11b85E/opx9mF+ra8lfI1sWMlSHwQb8Xb7EbhN77LvkhZGmWq33tPNo4lsLfLafKO7xYSNZOlBd6WbwXuV+KrObS3LgluSJ46K5ycTVlWmo8unJGfhFd9F8SG3M6uGvNpLZfcsYkD3O1HRFFpnE3qbC3RX9T/ACLtKFoXPJcXxfaYns1tH7keGgYmzTDQ5sttG4SdapTowV5VJxhFcLyds+hCld2OlKqqcHKWyPqjR2DjRpU6UPZpwjCPdFJL4HUStoeFnNzk5Pd6mQDUAAAAAAAAAAAAAAAgx2FjVp1KU1eNSEoSX1ZJp+TDV9DaE3CSlHdanzlrJoeeErzoVF7L9V8JQbezJd6+aOdUhldj6Tg8XHFUI1I/PwfNFPUjkRJElRXR5/SSsy3SPI8SWVkODxLg8vFcGSTimVsJiZ0ZXj6cmX0KUKi2ov8AFdGU23F2keqhRo4mOem/8eZ0lhZrdn8ReLNJYWtDbVHWTks7MZTSUqkFdpkcq7e937zOUiddy3dyOVUyokTqkU5m6RBOoc4Og5u6WXPgjaXQxhaUq07xLyhCMY2XDe38WRN8j0dCnGlExsVpGKvs5vy/MwqeupWxPE4QTVPV/QoYQcptvvZabtE8rTpupWu/NlglYrM7KWVG1ew3QW3Wq4yS9WkvR07r/wCsl6zXVRdv+5PQhrmOZxbEWgqS56vy/wDfsbrLR58AAAAAAAAAAAAAAAAAA8l2i6qPHUE6aXp6bvC7spRftQb6711XC7IqtPOvE6nC+IPCVe98L39zRmP0dVozdOtSlCa3xkrO3BrmuqKWVxdme4o16daGeDujzem6Nsyeluef4zRssyKmDJ2efgzOwtdxd0yGcU9zqYWvOnLNFl5hcbGXRlOdJrY9ThsfCqrPcyVNGibRezRZxKnB74p+GZuqjI54ejU+JIieBpP+Frul+NzdVUVJ8NoPa/qdHhKC38PpT+SN875Ig/gMLF9+XqyOpj0soJWXS0fBIavc1li4U+7QSsYmIxUpKzeXJZIykUq+InNd5mFORIkc6cr6GRh6diOci5h6KivEmUHJqMVdtpJLe28kkaxJ6jPpfVLAPC0aOCpQ/ZRi69WWUPSzW3OMVvlPNckk45v2S/COVWPJYir2tRzfy8j05sQAAAAAAAAAAAAAAAAAAEeJrxhCU5vZjCLlJvcoxV234IGUruyPmzX3Xn9OxaqU4uNCnDYhGVttq7cpu25u+6+5LmyrVebY9DwucsK9dU91+dCrexUWaUl1K3aOL1PU9lQxMNdUYk9DUnuUo90vxuSLE9SjPgOGfw3Xz97kT0KluqPxSfwM9umQ/wAiy/DP6D/8trdPy/M17WJn+VVI7S+hw8NNfxmM8Q8LiI/rOv8AyL+LyF49DX/cR/UHKf0mO70DlXf6mdFQDmRrDNksaKWbNczexOqEYq8iCrioblBPq8iaMHbUp1cVRvaML+JHCKbulbxuG+RFTjGUsyVvqZKRE2X0rF/qPKlDFRxFazhh16TZ4zqrKjCK57bi+6LJKdk7vkc7iNS1Jpc9Pf6H0foOjUjRi6qtUm3UmrtqM55uKvwjlHwLkb21PNMsDYwAAAAAAAAAAAAAAAAAAea7Sa2zovHPnQlHL69o/wCRrLZk1BXqR8z5XTK7Oymdv0iUM4vvXCxhRT0Zu8RVo9+m/kZ9DSqe/L4EEsP0Ovh+Mprv6GZDGxfEidFo6MMfTlzJFXRo6bROsTFnEqiGVmsqsWQyaNkQScWcZGdTTuox6uKit2fcSRpt7lOrjKcPh1K/EV3Lf7uBYhFI4+IxEqjvL0Iqcbs2ehBTi5ssKMMivJnYo09CbZNLlnK7GzuyjUGdSdPG4mOzRi1OjB+1VmvZnJcIJ5rm0uG+3SpX7zPM8Tr5qnZrl9zdpZOUAAAAAAAAAAAAAAAAAAADD0zo6OIoVsPP2atOUH02la66rf4GGrm0ZOMk0fJOmdGzw1erQqK06U5RfJ2e9dGs/ErtWdjtxkpJSXMxDU33ViBbyQqJ2djvFmpLFksarXFmLImjVnHZnZYiXMxlRKsTUXMPES5jKjDxNTqdXVb3sWRo605bs6ORmxo5EbzdjbYgd5OyMyhTsRSkdHD0rK5lxIWdGNkWWgMB+kYijh1Kzq1IwvyTeb91xGDlJIxWxEaVKU+iPqbD0YwjGEVaMYqMUtyjFWS9yOmeIbbd2SAwAAAAAAAAAAAAAAAAAAAAAaV7edVntR0hTjk1GnXstzWVOo+9Wi30iRVI8zo4Orp2b+Rp1ELOhEnw2Ei2p1YT9C5KEqkN0Jy9lttW67LtdJ2a3ktPXcpYu8XdF7p/UHF4WPpYpYjDvOOIwz9JSceclG7j8OrEosjpVk9HueYsaFpMAzc4uBc4bMmGzpKRlIjlIycPR/MjnIuYei+ZnUKcptQhFyk3ZRinKbfJJZtkVmy+6kYRu9EjZOqvZFiKzjUxsvQU9/o4tPEvv/hp+b6InhR6nKxHFFtT9Tb2g9W8JhIqOHw8IZWckr1X9qb9Z+LLCSWxx51Zzd5O5bGSMAAAAAAAAAAAAAAAAAAAAAAEOLw0KsJ06kVKE4uMovc4yVmmDKbTujTusnYm0pzwVfad7xo1kk7clVvv5XXe+JDKl0OhSx3Ka+Z6rsj1Tq4LC1ViYKNStUu6bcZWhFbMU2m027yfc0b04tLUgxdaNSfd2PcYbCwpx2adOMI3b2YRUY3e92RuVSo0tqdo/Etutg6UpS3zUNmq++cLS8zDSZvGpKOzNadpPZhhcPhZYnCQqKUJR2o7bnD0byb9a7yduPMiqLLG6JoYid7M1A8OupBnZJ20jq8Muo7RmvbSJYYVJXtflfmYztlrBqVWprsj0vZ7oSjjMbDDV5TUZxm06bipbcIuVm5J5WT3I2glKVmdDFVJUaTlHe6PoXV3VTB4JWw9CMZPfN+tWffOWduiy6FqMUtjz9WtOq7yZdGxEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdakFJOMkmmmmmrpp701xQB8/a6aFoUsTWjGlspVJWUH6qV7rJnGqV8laULaL2LEXeN2VmgtX4YivTpKTW3NRTaTtd8US066nJQtuYk0jdGE7OdHxoegnQ9Im1Jzk2qm0uUotOK6LxudBU4pWMU69Sm7wdjM0HqRgMJUVahhlGootKbnUm0nk7bcmk3uujKhFO6NquKq1VlnLQ9EblcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0p2n0tnGVeuzL3xRwsZG2IfikT033Ss1E/fcN97H4jD/AN6P5yNZ7G/jukQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABqTtdo2xEJfSpR8pSRx+IL+rF+BLT2PN6hv9ew33sSPDL+tH85GJ7G/zuEYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABrLtkp/u8uaqL3OL+ZzOIR1g/MkgeK1Cl+v4b72JBh/wC7H85GJH0Edo0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANf9sVK+Hoy5VWv5o3/AMSjj13E/E3hua61GlbHYb76HxKeH/uxEj6FO0aAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHjO1infA35VoPykvmVMav6T+RtHc1PqnK2Mw75Vqf9yObSdqkfMzJaH0Wd00AAAAAAAAAAAAAAAAAAAAAAAAAAAABxLoAU2idMudaphq0VGrDNON9icOaTzTzWRpGd3Z7gujcAAAAAAHne0LD7ej8SuUFJd8ZJ/IgxKvSZlbmkNWZfrVH7yP8AcjjrSUX4r7m7PpE75GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeQ13oypVKGNg86clGS5pttf5J95DUVmpA9Vhq6nCM47pRTXc1cmQJQAAAAAVuslLbwmJjzoVP7GR1VeDXgzKPnzVupbE0n9dfE4c9LPxX3Nz6UR6AjOQAAAAAAAAAAAAAAAAAADqAAAAAAAAAAUWu37nU74f3oiq/CCLUT92/wC7+CMUfhB6IlAABkAAxdKfsa33VT+1ms/hYPnHQP7en9pfE4FX4Tc+l47l3HoDQ5MgAAA5AOQAAAAAAAAAAAAD/9k=" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        // Chosen CSS
+        var config = {
+            ".chosen-select": {},
+            ".chosen-select-deselect": {
+                allow_single_deselect: true
+            },
+            ".chosen-select-no-single": {
+                disable_search_threshold: 10
+            },
+            ".chosen-select-no-results": {
+                no_results_text: "Oops, nothing found!"
+            },
+            ".chosen-select-width": {
+                width: "95%"
+            }
+        };
+        for (var selector in config) {
+            $(selector).chosen(config[selector]);
+        }
+        // Capture the form inputs
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+            // Form validation
+            function validateForm() {
+                var isValid = true;
+                $(".form-control").each(function () {
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+                $(".chosen-select").each(function () {
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+                return isValid;
+            }
+            // If all required fields are filled
+            if (validateForm()) {
+                // Create an object for the user"s data
+                var userData = {
+                    name: $("#name").val(),
+                    photo: $("#photo").val(),
+                    scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
+                    ]
+                };
+
+                let currentURL = window.location.origin;
+
+                // AJAX post the data to the friends API.
+                $.post(currentURL + "api/friends", userData, function (data) {
+                    // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                    $("#match-name").text(data.name);
+                    $("#match-img").attr("src", data.photo);
+                    // Show the modal with the best match
+                    $("#results-modal").modal("toggle");
+                });
+            } else {
+                alert("Please fill out all fields before submitting!");
+            }
+        });
+    </script>
+
